@@ -15,8 +15,8 @@ This repository sets up a full Docker Compose development environment for a Spri
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-org/teamtrack-infra.git
-cd teamtrack-infra
+git clone https://github.com/FranRoldan94/TeamTracker.git
+cd TeamTracker
 ```
 
 ### 2. Prepare the `.env` file
@@ -57,12 +57,11 @@ PGADMIN_PORT=8080
 ├── .env
 ├── init-scripts/
 │   ├── auth/
-│   │   ├── 01-db-config.sql
-│   │   └── 02-user-table.sql
+│   │   └── 01-db-config.sql
 │   ├── core/
-│   │   └── init.sql
+│   │   └── 01-db-config.sql
 │   └── notification/
-│       └── init.sql
+│       └── 01-db-config.sql
 └── pgadmin/
     └── servers.json
 ```
@@ -121,16 +120,7 @@ This stops and removes containers **and volumes**, forcing reinitialization on n
 
 ---
 
-## 📌 To-Do / Extensibility Ideas
-
-- Add Kafka or MongoDB
-- Wire up microservices with Spring Cloud Config / Eureka
-- Add Flyway for migrations
-- Use Traefik or Nginx for gateway proxying
-
----
-
 ## 🧑‍💻 Author
 
-**TeamTrack / InnovaR**  
+**TeamTrack**  
 Made with ❤️ by Fran Roldán
