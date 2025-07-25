@@ -1,0 +1,31 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Auth DB",
+      "Group": "Microservices",
+      "Host": "postgres_auth",
+      "Port": 5432,
+      "MaintenanceDB": "postgres",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    },
+    "2": {
+      "Name": "Core DB",
+      "Group": "Microservices",
+      "Host": "postgres_core",
+      "Port": 5432,
+      "MaintenanceDB": "postgres",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    },
+    "3": {
+      "Name": "Notification DB",
+      "Group": "Microservices",
+      "Host": "postgres_notification",
+      "Port": 5432,
+      "MaintenanceDB": "postgres",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    }
+  }
+}
